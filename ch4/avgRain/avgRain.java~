@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class avgRain{
+  public static void main(String []args){
+  Scanner stdin = new Scanner(System.in);
+  System.out.println("input number of years");
+  bool sentry = true;
+  while(sentry == true){
+  int years = stdin.nextInt();
+  if(years <0){
+    sentry = false;
+    System.out.println("invalid input, try a positive number");
+  }
+  }
+  int rain = 0;
+  for(int i = 0; i < years; i++){
+    for(int j = 0; j <12; j++)
+     {
+    System.out.println("input number of inches of rain this month");
+    while(sentry == true){ 
+    int curr = stdin.nextInt();
+    if(curr < 0){
+    System.out.println("invalid input, try a positve")
+      sentry = false;
+    }
+    else{ sentry = true}
+    }
+     rain += curr;
+     }
+  }
+  int numMonths = years *12;
+  double avgRain = rain/numMonths;
+  System.out.println(numMonths+" have passed, with "+rain+" inches of rain. making an average rain per month of" + avgRain);
+  
+  }}
