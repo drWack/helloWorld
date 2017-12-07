@@ -1,0 +1,16 @@
+import java.util.Scanner;
+import java.io.*;
+public class convertToUpper{
+public static void main(String[] args){
+  Scanner stdin = new Scanner(System.in);
+  System.out.println("input filename to convert(include extension)");
+  Scanner input = new Scanner(stdin.next());
+  System.out.println("input filename to write to(include extension)");
+  printWriter output = new PrintWriter(stdin.next());
+  while(input.hasNext())
+  {
+  output.print(input.next().toUpperCase());
+  
+  }
+  output.close()
+}}
