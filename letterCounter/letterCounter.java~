@@ -1,0 +1,12 @@
+import java.util.Scanner;
+import java.io.*;
+public class letterCounter{
+public static void main(String[] args){
+  Scanner input = new Scanner("letters.txt");
+  int count = 0;
+  while(input.hasNextByte)
+  {
+  count++;
+  }
+  System.out.println(count);
+}}
